@@ -50,34 +50,46 @@ body {
 
 h1 {
     font-family: 'YoungSerif', serif;
+    margin-bottom: 1.5rem;
 }
 
 h3 {
     color: var(--darkberry);
     font-size: 1.5rem;
-    
+    margin-bottom: 0.5rem;
 }
 
 p {
     font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.nutmeg-h {
+    font-family: 'YoungSerif', serif;
+    color: var(--nutmeg);
+    font-size: 2rem;
+    font-weight: 500;
+    margin:  1.5rem 0;
 }
 
 img {
     max-width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .container {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 @media (min-width: 1200px) {
-
-    img {
-        border-radius: 0.5rem;
-    }
-
     .container {
         background-color: white;
         width: 98%;
@@ -95,11 +107,46 @@ img {
 }
 
 .list {
+    font-family: 'Outfit', sans-serif;
     line-height: 2rem;
     list-style-position: inside;
     padding-inline-start: 0%;
 }
 
+.instructions .list li {
+    margin-bottom: 0.5rem;
+}
+
 .list li::marker {
     color: var(--darkberry);
+    font-weight: bold;
+}
+
+table{
+    width: 93%;
+    color: hsl(14, 45%, 36%);
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+td {
+    color: hsl(14, 45%, 36%);
+    line-height: 1.5em;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Outfit', sans-serif;
+    padding: 0.7rem 0 0.7rem 0;
+    border-bottom: 1px solid var(--light-grey);    
+}
+
+tr:last-child td{
+    border: none;
+}
+
+.cells{
+    color: hsl(14, 45%, 36%);
+    line-height: 1.5em;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
 }
